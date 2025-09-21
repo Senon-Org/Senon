@@ -354,14 +354,7 @@ controls that can prevent sensor listener registration.
     - Device-specific instructions for disabling power restrictions
     - Toast notifications explaining power management requirements
 
-#### 2. Duplicate Activity Declaration Warning
-
-**Problem**: AndroidManifest.xml contained duplicate `AutoTestResultsActivity` declarations causing
-build warnings.
-
-**Solution**: Removed duplicate activity declarations while preserving all necessary activities.
-
-#### 3. Power Management Restrictions
+#### 2. Power Management Restrictions
 
 **Problem**: Modern Android devices have aggressive power management that can kill background
 processes and restrict sensor access during intensive testing.
@@ -397,7 +390,7 @@ processes and restrict sensor access during intensive testing.
     - Manual access via "Power Management" menu option
     - Device-specific guidance and settings access
 
-#### 4. Sensor System Overload
+#### 3. Sensor System Overload
 
 **Problem**: Rapid sensor registration/unregistration could overload the sensor system, especially
 on devices with strict resource management.
@@ -435,7 +428,7 @@ on devices with strict resource management.
 - May require manual app protection settings
 - Background app limits can affect sensor testing
 
-#### 5. Understanding Negative Sensor Values
+#### 4. Understanding Negative Sensor Values
 
 **Problem**: Users may be concerned about negative values appearing in sensor readings and wonder if
 this indicates a malfunction or error.
